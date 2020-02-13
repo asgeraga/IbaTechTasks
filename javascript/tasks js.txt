@@ -1,0 +1,165 @@
+/**
+ * T A S K S
+ * */
+/* TASK 1
+* Create a variable, set the numeric value for this variable and execute this value into console
+* */
+/* TASK 2
+* Create variable using const keyword
+* Try to rewrite the value of it
+* */
+/* TASK 3
+* Create a variable with the value '123', show its type in console using typeof operator
+* Change the type of this value into numeric, using parseInt(), parseFloat()
+* And show its type in console using typeof operator again
+* */
+/* TASK 4
+* Use browser modal windows to show the message "Hello! This is alert"
+* */
+/* TASK 5
+* Show the modal window with message "Enter the number" and ability to write this number
+* Create a variable with result of the users enter as its value and show this value in console.
+* */
+/* TASK 6
+* Use prompt modal window for getting two different numbers from the user
+* Show the result of next operations in console: +; -; *; /.
+* */
+/**********************************************************************/
+/* TASK 1
+* Show up next things in console, using cinsole.log() method:
+  - max integer value
+  - min integer value
+  - not a number
+  - max safe integer
+  - min safe integer
+* */
+/* TASK 2
+* Create two variables. First will contain - any number, second - any string with any word inside.
+* Execute the SUM of these two variables in the console
+* Execute the DEFERENCE between these two variables in the console
+* Execute the result of MULTIPLYING these two variables in the console
+* Explain the result of every operation by your own words
+* */
+/* TASK 3
+* Create 2 variables. Assign true for frirst one, and false for second one.
+* Execute into console:
+*   - result of comparing 0 and variable with false inside with == operator
+*   - result of comparing 1 and variable with true inside with === operator
+* */
+/* TASK 4
+* Execute into console next statements and explain every result in your own words:
+* Create variables - x = 6, y = 15, z = 4:
+    * x += y  - x++ * z
+    * z = --x -y * 6
+    * y /= x + 5 % z
+* 'random string' + 500
+* 'random string' + +'number'
+* 'random string' + +'500n'
+* 'random string' + parseInt('404not found')
+* !!'false' == !!'true'
+* 'true' == true
+* 'true' === true
+* NaN == 1` `NaN == NaN` `NaN === NaN` `NaN > NaN` `NaN < NaN` `NaN >= NaN` `NaN <= NaN
+* [] == true` `{} == true
+* */
+/* TASK 5
+* Use browser modal windows for getting three numbers from user.
+* Then execute into console:
+*   - arithmetic average
+*   - max number
+*   - min number
+* */
+/**********************************************************************/
+/* TASK - 1
+* Get any integer number from user.
+* After you get the number, show modal window with message about is number even ot odd.
+*/
+/* TASK - 2
+* Ask user in witch language he wants to see the list of the days.
+* User can enter only three values, they are - az, en, ru
+* Show the list of days on selected language.
+* */
+/* TASK - 3
+* Get the access group name from the user, it can be - 'admin', 'manager' or 'user'.
+* And show different message for different access group:
+*   - for admin - "Hello, admin!"
+*   - for manager - "Hello, manager!"
+*   - for user - "Hello, user!"
+* */
+/* TASK - 4
+* We can simulate the staff list with the role for each particular member.
+* User enters the name of the employee, after that the message with the role of this employee needs to be shown.
+* The list is:
+* Boss - the main Boss in the building
+* Boss Junior - right hand of the Boss
+* John Doe - the worker of the month
+* Kicki - schedule writer
+* */
+/* TASK - 5
+* Write a coffee-machine program.
+* Program can accept the coins and prepare the drinks (Coffee 3 AZN, cappuccino 4 AZN, herbal tea 2 AZN).
+* It means that the user enters the amount of money that he gives in the modal window,
+* next - he enters the name of the drink he wants.
+* Depending of the drink the user was choose, you need to calculate the change and show the message:
+* `Your drink *DRINK_NAME* and change *CHANGE*`
+* If the change equals to 0, show next message: `Yur drink *DRINK_NAME. Thank you for the exact amount of money!*`
+* */
+/**********************************************************************/
+/* TASK - 1
+* User needs to enter name and age.
+* If the user entered incorrect data, we need to ask him again and again,
+* UNTIL the name and age will be entered correctly.
+* Incorrect data is: the number instead of name, letter symbols instead of age
+* */
+/* TASK - 2
+* Show first 147 odd numbers starting from 1.
+*   ADVANCED COMPLEXITY - do not show numbers witch can be divided by 5 without residue.
+* */
+/* TASK - 3
+* Create checking for correctness of data entry.
+* User should write two numbers and the symbol of the operation.
+* If the user entered NOT a numbers, or operations that is not in the list - ask him again and again,
+* UNTIL the entered data will be correct.
+*  Operations list:
+*   * - miltiply
+*   + - addition
+*   - - subtraction
+*   / - dividing
+* */
+/* TASK - 4 calculator
+* Ask user to enter two numbers and operation.
+* Check for correctness of data entry from the previous task.
+* Show the message with the result of calculating this two numbers with
+* Display a message with the result of the selected operation on the entered numbers.
+*
+* ADVANCED_COMPLEXITY:
+*     - add more operations to the list -> raising to the power, taking the root of number 1 of the power of number 2.
+*     - keep in memory the result of the last operation. If one of two numbers was entered as `PREV_OP`
+*      replace the result of last operation instead of thin number.
+*     - create a function, which will have three arguments - first number, second number, operation.
+*/
+/* TASK - 5
+* You have an object like this:*/
+let user = {
+  name: 'Kenny',
+  surname: 'Doe',
+  birthDay: '01.12.1988',
+  description: 'best men ever',
+  pets: {
+    name: 'Bob',
+    age: 14,
+    status: 'dead'
+  }
+}
+/* The task is show all of the properties of this object in console like this:
+* PROPERTY_NAME - PROPERTY_VALUE.
+*   TASK-5.1
+*   Same thins with an Array ['Gogi', 'Goga', 'Gogo', 'Gugu', 'Gunigugu', 'Guguber', 'Gigi'].
+*   Display all of the elements of this array in console.
+*   */
+Collapse
+
+
+
+
+
