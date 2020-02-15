@@ -210,10 +210,12 @@ input {
     display: inline-block;
     margin-bottom: 4%;
     font-family: Verdana, sans-serif;
-    color: #bebebe;
+    color: black;
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
+    border-color: #eaeaea;
+    border-style: groove;
 }
 input:focus {
     border-radius: 3px;
@@ -250,4 +252,5 @@ input[type=submit] {
     color: #ffffff;
     cursor: pointer;
     border-radius: 5px;
+    border: none;
 }
