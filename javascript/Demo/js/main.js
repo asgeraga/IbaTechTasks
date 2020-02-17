@@ -226,20 +226,20 @@
 
 //task 4
 
-function User(name, age) {
-    if(arguments.length<2) throw new SyntaxError("no arguments");
+// function User(name, age) {
+//     if(arguments.length<2) throw new SyntaxError("no arguments");
 
-    this.name = name;
-    this.age = age;
+//     this.name = name;
+//     this.age = age;
 
-    this.increaseAge = function (){
-        return ++this.age;
-    }
-  }
-  this.addField = function (fieldName , fieldValue){
-      this[fieldName] = fieldValue;  }
-//not complated check in home
- console.log( new User ("meke", 44));
+//     this.increaseAge = function (){
+//         return ++this.age;
+//     }
+//   }
+//   this.addField = function (fieldName , fieldValue){
+//       this[fieldName] = fieldValue;  }
+// //not complated check in home
+//  console.log( new User ("meke", 44));
   
 
  //task5
@@ -270,10 +270,23 @@ function User(name, age) {
     },
   };
 
-  
-  
+  function Burger(burgerSize, burgerStuffing){
+    this.size=burgerSize;
+    this.stuffing=burgerStuffing;
 
+    this.getPrice = function (){
+        this.price = this.size.price + this.stuffing.price;
+    
+    constantValues().cal = this.cal;
 
+    }
+
+    
+    }
+
+  const burger = new Burger("SIZE_LARGE", "STUFFING_MAYO");
+  console.log(burger)
+  
   
 
 
