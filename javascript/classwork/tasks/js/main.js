@@ -503,29 +503,29 @@
 
 /* TASK - 6
 * Rewrite calculator() function, into the constructor function, with a new features:*/
-function calc(firstNumber, secondNumber, operation) {
-    firstNumber = parseInt(prompt("Enter the first number", "1"));
-    secondNumber = parseInt(prompt("Enter the second number", "1"));
-    operation = prompt("enter the operation");
-    switch (operation) {
-        case "+":
-            console.log(firstNumber + operation + secondNumber + "=" + (firstNumber + secondNumber));
-            break;
-        case "-":
-            console.log(firstNumber + operation + secondNumber + "=" + (firstNumber - secondNumber));
-            break;
-        case "*":
-            console.log(firstNumber + operation + secondNumber + "=" + (firstNumber * secondNumber));
-            break;
-        case "/":
-            console.log(firstNumber + operation + secondNumber + "=" + (firstNumber / secondNumber));
-            break;
-        default:
-            console.log("wrong selection")
-    }
-}
+// function calc(firstNumber, secondNumber, operation) {
+//     firstNumber = parseInt(prompt("Enter the first number", "1"));
+//     secondNumber = parseInt(prompt("Enter the second number", "1"));
+//     operation = prompt("enter the operation");
+//     switch (operation) {
+//         case "+":
+//             console.log(firstNumber + operation + secondNumber + "=" + (firstNumber + secondNumber));
+//             break;
+//         case "-":
+//             console.log(firstNumber + operation + secondNumber + "=" + (firstNumber - secondNumber));
+//             break;
+//         case "*":
+//             console.log(firstNumber + operation + secondNumber + "=" + (firstNumber * secondNumber));
+//             break;
+//         case "/":
+//             console.log(firstNumber + operation + secondNumber + "=" + (firstNumber / secondNumber));
+//             break;
+//         default:
+//             console.log("wrong selection")
+//     }
+// }
 
-calc()
+// calc()
 
 /* Each operation has its own arrow methods.
 * That means - we will have sum(a,b) for summing, multiple(a,b) for multiplying and so on.
@@ -576,3 +576,36 @@ calc()
 //         isContune=false;
 //     }
 // }
+
+/*   W A R M U P
+* Bring some life to your packman from CSS animation lesson.
+*
+* Features to improve:
+*   1 - movement control by pressing keyboard arrows
+*   2 - stop the packman, if it's close to the end of the screen from any side
+*   3 - add three modes to this game by giving user the ability to change the distance for one click. Packman can go 25px, 50px, 100px for one move. Changing the modes should be happening after pressing any 2 keyboard buttons that you choose (example - Ctrl+1, Ctrl+2, Ctrl+3).
+*   4 - Add start screen with button 'start' and title and no any other content on the page. After click on 'start' - show the packman with all functionality.
+*/
+var speed = 10, // the box will move by 10 pixels on every step
+    direction = 1; // 1 moves in the positive direction; -1 vice versa
+
+
+var boxElement = document.getElementsByTagName('div');
+
+if (boxElement) {
+    boxElement.addEventListener('mouseover', function () {
+        // Calculate and store some of the box coordinates:
+        var boxLeftPos = boxElement.offsetLeft,
+            boxRightPos = boxLeftPos + boxElement.offsetWidth;
+        // When right side of the box goes too far - change direction:
+        if (boxRightPos > document.body.offsetWidth) {
+            direction = -1;
+        }
+        // When left side of the box goes too far - change direction:
+        if (boxLeftPos < 0) {
+            direction = 1;
+        }
+        // Recalculate position:
+        boxElement.style.left = (boxLeftPos + speed * direction) + 'px';
+    });
+}
