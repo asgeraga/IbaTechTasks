@@ -35,8 +35,8 @@ class App extends Component {
                     className="modal"
                     show={this.state.isShowing}
                     close={this.closeModalHandler}>
-                      Once you delete this file, it won’t be possible to undo this action. 
-                      Are you sure you want to delete it?
+                      <p style={{color:'white'}}>Once you delete this file, it won’t be possible to undo this action.
+                          Are you sure you want to delete it? </p>
                 </Modal>
             </div>
         );
